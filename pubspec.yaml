@@ -1,0 +1,57 @@
+name: tecbeck_projects
+description: Tecbeck LMS project
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.6 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.5
+  lottie:
+  sizer: ^2.0.15
+  shared_preferences: ^2.0.15
+  get: ^4.6.5
+  shimmer: ^2.0.0
+  dropdown_button2: ^1.8.2
+  file_picker: ^5.2.2
+  date_time_picker: ^2.1.0
+  device_preview: ^1.1.0
+  animated_segmented_tab_control: ^1.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.1
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/animations/
+
+  fonts:
+    - family: RobotoBold
+      fonts:
+        - asset: assets/fonts/RobotoBold.ttf
+    - family: RobotoMedium
+      fonts:
+        - asset: assets/fonts/RobotoMedium.ttf
+    - family: RobotoRegular
+      fonts:
+        - asset: assets/fonts/RobotoRegular.ttf
+    - family: RobotoThin
+      fonts:
+        - asset: assets/fonts/RobotoThin.ttf
+    - family: RobotoBoldItalic
+      fonts:
+        - asset: assets/fonts/RobotoBoldItalic.ttf
