@@ -11,10 +11,6 @@ import 'utilities/theme.dart';
 void main() {
   runApp(
     const MyApp(),
-    // DevicePreview(
-    //   enabled: !kReleaseMode,
-    //   builder: (context) => const MyApp(), // Wrap your app
-    // ),
   );
 }
 DarkThemeProvider themeChangeProvider = DarkThemeProvider();
@@ -68,14 +64,14 @@ class _MyAppState extends State<MyApp> {
     return Sizer(
         builder: (BuildContext context, Orientation orientation, deviceType) {
       return GetMaterialApp(
-        // useInheritedMediaQuery: true,
-        // locale: DevicePreview.locale(context),
-        // builder: (context, child) {
-        //   return ScrollConfiguration(
-        //     behavior: MyBehavior(),
-        //     child: child!,
-        //   );
-        // },
+        useInheritedMediaQuery: true,
+        locale: DevicePreview.locale(context),
+        builder: (context, child) {
+          return ScrollConfiguration(
+            behavior: MyBehavior(),
+            child: child!,
+          );
+        },
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
         theme: Styles.themeData(themeChangeProvider.darkTheme, context,
